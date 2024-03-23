@@ -1,0 +1,61 @@
+{
+  "contact": {
+    "nickname": "",
+    "name": "",
+    "surname": "",
+    "title": ["", ""],
+    "email": "",
+    "phone": "",
+    "location": "",
+    "website": "",
+    "birthday": "",
+    "driving_license": "",
+    "nationality": "",
+    "disponibility": "",
+    "linkedin": "",
+    "github": "",
+    "footer": ""
+  },
+  "about": "",
+  "certifications": [
+    {
+      "title": "",
+      "icon": "",
+      "courses": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "start_date": "",
+      "end_date": "",
+      "company": "",
+      "title": "",
+      "description": "",
+      "skills": ["", ""],
+      "link": ""
+    }
+  ],
+  "projects": [
+    {
+      "type": "",
+      "title": "",
+      "body": "",
+      "badges": ["", ""],
+      "href": "",
+      "image": "",
+      "hrefSource": ""
+    }
+  ],
+  "technologies": [
+    {
+      "Title": "",
+      "Description": "",
+      "tags": ["", ""]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+---
+import Background from "../components/common/Background.astro";
+import "@fontsource-variable/inter";
+
+interface Props {
+  title: string;
+  description: string;
+  url: string;
+}
+
+const { title, description, url } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={url+"/images/avatar_media_200x200.png"} />
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <link rel="apple-touch-icon" sizes="200x200" href={url+"/images/avatar_media_200x200.png"}>
+    <!-- <meta property="og:image" content={url+"/images/avatar_media_1200x630.png"} />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630"> -->
+    <meta property="og:url" content={url} />
+    <meta property="og:type" content="website" />
+
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/images/avatar.webp" />
+  </head>
+  <body>
+    <Background />
+    <slot />
+    <script src="../utilities/aos"></script>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    color-scheme: light dark;
+    --accent: 58, 120, 234;
+    --accent-light: 204, 225, 250;
+    --accent-dark: 10, 46, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+  html {
+    font-family: "Inter Variable", sans-serif;
+    color: #d1d5db;
+  }
+  section {
+    margin-top: 10em;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    color: #ffffff;
+  }
+  h3 {
+    color: #ffffff;
+  }
+  h4 {
+    color: #ffffff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #60a5fa;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #60a5fa;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #60a5fa;
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: #60a5fa;
+  }
+  .hvr-bounce-in {
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transform: perspective(1px) translateZ(0);
+    -webkit-transition:
+      -webkit-transform 0.5s,
+      box-shadow 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .hvr-bounce-in:hover,
+  .hvr-bounce-in:focus,
+  .hvr-bounce-in:active {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+</style>

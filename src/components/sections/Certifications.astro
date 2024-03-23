@@ -1,0 +1,59 @@
+---
+import Certificate from "@/components/icons/sections/certificate.astro";
+
+interface Course {
+  name: string;
+  url: string;
+}
+
+interface Certification {
+  title: string;
+  icon: string;
+  courses: Course[];
+}
+
+interface Certifications {
+  certifications: Certification[];
+}
+
+const { certifications } = Astro.props;
+---
+
+<section id="certifications" data-aos="fade-up">
+  <h2 class="flex gap-3">
+    <Certificate class="size-8" />Certifications & Curses
+  </h2>
+  {
+    certifications.map((certification: Certification) => {
+      return (
+        <div class="flex items-center mb-4 pt-2 rounded-lg border border-gray-500">
+            <img
+              src={`/icons/certifications/${certification.icon}.webp`}
+              alt={certification.title}
+              class="size-[32px] mx-[20px]"
+            />
+          <div class="flex-grow">
+            <h3 class="text-lg font-bold">{certification.title}</h3>
+            <ul class="list-disc list-inside">
+              {certification.courses.map((course) => {
+                return (
+                  <div class="mb-1">
+                    <a
+                      href={course.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-blue-500 hover:underline"
+                    >
+                      {course.name}
+                    </a>
+                  </div>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      );
+    })
+  }
+  <p></p>
+</section>

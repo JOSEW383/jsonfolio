@@ -1,0 +1,20 @@
+---
+import Addressbook from "@/components/icons/sections/address-book.astro";
+import ReadMore from "../common/ReadMore.jsx";
+
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<section id="about" class="mt-2" data-aos="fade-zoom-in">
+  <h2 class="flex gap-3">
+    <Addressbook class="size-8" />
+    About
+  </h2>
+  <p>
+    <ReadMore text={text} minLines={4} aos="fade-zoom-in" client:only="react" />
+  </p>
+</section>

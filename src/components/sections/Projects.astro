@@ -1,0 +1,25 @@
+---
+import Briefcase from "@/components/icons/sections/brand-powershell.astro";
+import ProjectSection from "@/components/common/ProjectSection.tsx";
+
+interface Project {
+  type: "professional" | "personal";
+  href: string;
+  title: string;
+  body: string;
+  image: string;
+  hrefSource: string;
+  badges: string[];
+}
+
+interface Props {
+  projects: Project[];
+}
+
+const { projects } = Astro.props;
+---
+
+<section id="projects" data-aos="fade-up">
+  <h2 class="flex gap-3"><Briefcase class="size-8" />Projects</h2>
+  <ProjectSection projects={projects} client:only="react" />
+</section>

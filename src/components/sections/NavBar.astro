@@ -1,0 +1,57 @@
+---
+const items = [
+  {
+    id: "about",
+    name: "About",
+    url: "#about",
+  },
+  {
+    id: "experience",
+    name: "Experience",
+    url: "#experience",
+  },
+  {
+    id: "projects",
+    name: "Projects",
+    url: "#projects",
+  },
+  {
+    id: "Technologies",
+    name: "Technologies",
+    url: "#technologies",
+  }
+];
+---
+
+<header
+  class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
+  data-aos="fade-down"
+>
+  <nav class="flex px-3 font-medium rounded-full text-gray-200">
+    {
+      items.map((item) => (
+        <a
+          class="relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-400 text-md sm:text-lg"
+          href={item.url}
+        >
+          {item.name}
+        </a>
+      ))
+    }
+  </nav>
+</header>
+<div class="h-14"></div>
+
+<style>
+  nav {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+
+  @keyframes nav-shadown {
+    to {
+      @apply shadow-lg ring-1 backdrop-blur bg-gray-800/60 ring-white/10;
+    }
+  }
+</style>

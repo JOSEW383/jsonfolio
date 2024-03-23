@@ -1,0 +1,253 @@
+{
+  "contact": {
+    "nickname": "JohnDoe",
+    "name": "John Doe",
+    "surname": "Example",
+    "title": ["Software Developer", "Backend Developer"],
+    "email": "john.doe@example.com",
+    "phone": "+1 123 456 7890",
+    "location": "Anytown, USA",
+    "website": "https://johndoe.github.io/",
+    "birthday": "1980",
+    "driving_license": "A",
+    "nationality": "American",
+    "disponibility": "Currently Working",
+    "linkedin": "https://www.linkedin.com/in/johndoe/",
+    "github": "https://github.com/JohnDoe",
+    "footer": "Striving for excellence, pushing boundaries, and continuously learning to deliver impactful software solutions."
+  },
+  "about": "I am a passionate software developer with over 10 years of experience in various programming languages and frameworks.\n\nI enjoy problem-solving and always strive to deliver efficient, high-quality software.\n\nIn my free time, I contribute to open-source projects and continuously learn new technologies.\n\nI believe in the power of software to change the world and am excited to be a part of this ever-evolving industry.",
+  "certifications": [
+    {
+      "title": "Python Coursera",
+      "icon": "brand-python",
+      "courses": [
+        {
+          "name": "Python for Everybody ; Data Structures & Algorithms in Python.",
+          "url": "https://www.coursera.com/"
+        }
+      ]
+    },
+    {
+      "title": "AI & ML",
+      "icon": "robot",
+      "courses": [
+        {
+          "name": "Intro to Machine Learning",
+          "url": "https://www.udacity.com/course/intro-to-machine-learning--ud120"
+        },
+        {
+          "name": "Deep Learning Specialization",
+          "url": "https://www.coursera.org/specializations/deep-learning"
+        }
+      ]
+    },
+    {
+      "title": "Web Development",
+      "icon": "web",
+      "courses": [
+        {
+          "name": "The Complete JavaScript Course 2023",
+          "url": "https://www.udemy.com/course/the-complete-javascript-course/"
+        },
+        {
+          "name": "Modern HTML & CSS From The Beginning (Including Sass)",
+          "url": "https://www.udemy.com/course/modern-html-css-from-the-beginning/"
+        },
+        {
+          "name": "The Web Developer Bootcamp 2023",
+          "url": "https://www.udemy.com/course/the-web-developer-bootcamp/"
+        }
+      ]
+    },
+    {
+      "title": "Data Science",
+      "icon": "data",
+      "courses": [
+        {
+          "name": "Python for Data Science and Machine Learning Bootcamp",
+          "url": "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/"
+        },
+        {
+          "name": "Data Science A-Z™: Real-Life Data Science Exercises Included",
+          "url": "https://www.udemy.com/course/datascience/"
+        },
+        {
+          "name": "The Data Science Course 2023: Complete Data Science Bootcamp",
+          "url": "https://www.udemy.com/course/the-data-science-course-complete-data-science-bootcamp/"
+        },
+        {
+          "name": "Machine Learning A-Z™: Hands-On Python & R In Data Science",
+          "url": "https://www.udemy.com/course/machinelearning/"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "start_date": "2019/05/01",
+      "end_date": "2021/09/01",
+      "company": "ABC Corp",
+      "title": "Software Engineer Intern",
+      "description": "\n- Worked on the development of a digital banking application using Java and Spring Boot.\n- Participated in a project for employee management using Python and Django. This project involved multiple integrations for access management.\n- Government financial aid project for businesses: Participated in the development, maintenance, updates, and fixes of solutions implemented in Python as well as using libraries for necessary project automation.\n- Participated in a project for the automotive sector based on RPA technologies through Automation Anywhere for its maintenance and technical support to users, as well as for making corrections and migrating processes as required.",
+      "skills": ["Java", "Python", "Django", "Spring Boot", "Automation Anywhere"],
+      "link": "https://www.linkedin.com/company/abccorp"
+    },
+    {
+      "start_date": "2023/06/01",
+      "end_date": "2025/08/01",
+      "company": "XYZ Corp",
+      "title": "Senior Software Engineer",
+      "description": "\n- Led the development of a cloud-based microservices architecture using Node.js and Express.js.\n- Implemented CI/CD pipelines using Jenkins and Docker.\n- Worked on a project for inventory management using MongoDB and GraphQL. This project involved multiple integrations for data synchronization.\n- Participated in a project for the retail sector based on AI technologies for predictive analysis and demand forecasting.\n- Mentored junior developers and conducted code reviews to ensure code quality and adherence to coding standards.",
+      "skills": ["Node.js", "Express.js", "MongoDB", "GraphQL", "Docker", "Jenkins"],
+      "link": "https://www.linkedin.com/company/xyzcorp"
+    },
+    {
+      "start_date": "2025/09/01",
+      "end_date": "",
+      "company": "DEF Inc",
+      "title": "Lead Software Engineer",
+      "description": "\n- Leading a team of software engineers in the development of a large-scale e-commerce platform using React.js and Redux.\n- Implementing performance optimizations and scalability improvements to handle high traffic volumes.\n- Working on a project for customer relationship management using Salesforce. This project involves multiple integrations for data synchronization and automation.\n- Participating in a project for the logistics sector based on IoT technologies for real-time tracking and analytics.\n- Conducting regular team meetings and code reviews to ensure code quality and adherence to coding standards.",
+      "skills": ["React.js", "Redux", "Salesforce", "IoT"],
+      "link": "https://www.linkedin.com/company/definc"
+    }
+
+  ],
+  "projects": [
+    {
+      "type": "professional",
+      "title": "E-commerce Platform Development",
+      "body": "Developed a large-scale e-commerce platform using React.js and Redux for a client in the retail sector.",
+      "badges": ["React.js", "Redux"],
+      "href": "https://reactjs.org/",
+      "image": "images/react_capture.webp",
+      "hrefSource": ""
+    },
+    {
+      "type": "professional",
+      "title": "Inventory Management System",
+      "body": "Implemented an inventory management system using MongoDB and GraphQL for a client in the logistics sector.",
+      "badges": ["MongoDB", "GraphQL"],
+      "href": "https://graphql.org/",
+      "image": "images/graphql_capture.webp",
+      "hrefSource": ""
+    },
+    {
+      "type": "professional",
+      "title": "Customer Relationship Management",
+      "body": "Worked on a customer relationship management project using Salesforce for a client in the services sector.",
+      "badges": ["Salesforce"],
+      "href": "https://salesforce.com/",
+      "image": "images/salesforce_capture.webp",
+      "hrefSource": ""
+    },
+    {
+      "type": "professional",
+      "title": "IoT Tracking System",
+      "body": "Participated in a project for the logistics sector based on IoT technologies for real-time tracking and analytics.",
+      "badges": ["IoT"],
+      "href": "https://www.ibm.com/internet-of-things",
+      "image": "images/iot_capture.webp",
+      "hrefSource": ""
+    },
+    {
+      "type": "professional",
+      "title": "AI Predictive Analysis",
+      "body": "Worked on a project for the retail sector based on AI technologies for predictive analysis and demand forecasting.",
+      "badges": ["AI"],
+      "href": "https://www.ibm.com/cloud/artificial-intelligence",
+      "image": "images/ai_capture.webp",
+      "hrefSource": ""
+    },
+    {
+      "type": "professional",
+      "title": "Microservices Architecture",
+      "body": "Led the development of a cloud-based microservices architecture using Node.js and Express.js for a client in the tech sector.",
+      "badges": ["Node.js", "Express.js"],
+      "href": "https://nodejs.org/",
+      "image": "images/node_capture.webp",
+      "hrefSource": ""
+    },
+    {
+      "type": "professional",
+      "title": "CI/CD Implementation",
+      "body": "Implemented CI/CD pipelines using Jenkins and Docker for a client in the tech sector.",
+      "badges": ["Jenkins", "Docker"],
+      "href": "https://jenkins.io/",
+      "image": "images/jenkins_capture.webp",
+      "hrefSource": ""
+    },
+    {
+      "type": "personal",
+      "title": "Personal Blog Development",
+      "body": "Developed a personal blog using Gatsby.js and GraphQL to share my thoughts and experiences in software development.",
+      "badges": ["Gatsby.js", "GraphQL"],
+      "href": "https://gatsbyjs.com/",
+      "image": "images/gatsby_capture.webp",
+      "hrefSource": ""
+    },
+    {
+      "type": "personal",
+      "title": "Portfolio Website",
+      "body": "Created a portfolio website using HTML, CSS, and JavaScript to showcase my projects and skills.",
+      "badges": ["HTML", "CSS", "JavaScript"],
+      "href": "https://www.w3schools.com/",
+      "image": "images/html_css_js_capture.webp",
+      "hrefSource": ""
+    },
+    {
+      "type": "personal",
+      "title": "Machine Learning Projects",
+      "body": "Worked on several machine learning projects using Python and libraries like NumPy, Pandas, and Scikit-learn.",
+      "badges": ["Python", "NumPy", "Pandas", "Scikit-learn"],
+      "href": "https://scikit-learn.org/",
+      "image": "images/scikit_learn_capture.webp",
+      "hrefSource": ""
+    },
+    {
+      "type": "personal",
+      "title": "Game Development",
+      "body": "Developed a 2D platformer game using Unity and C# for my personal interest in game development.",
+      "badges": ["Unity", "C#"],
+      "href": "https://unity.com/",
+      "image": "images/unity_capture.webp",
+      "hrefSource": ""
+    },
+    {
+      "type": "personal",
+      "title": "Open Source Contributions",
+      "body": "Contributed to several open source projects on GitHub, improving code quality and adding new features.",
+      "badges": ["GitHub"],
+      "href": "https://github.com/",
+      "image": "images/github_capture.webp",
+      "hrefSource": ""
+    }
+  ],
+  "technologies": [
+    {
+      "Title": "Web Development",
+      "Description": "Development of web applications using JavaScript, React, and Node.js.",
+      "tags": ["JavaScript", "React", "Node.js"]
+    },
+    {
+      "Title": "Data Science",
+      "Description": "Data analysis and machine learning with Python, Pandas, and Scikit-learn.",
+      "tags": ["Python", "Pandas", "Scikit-learn"]
+    },
+    {
+      "Title": "iOS Development",
+      "Description": "Development of iOS applications using Swift and Xcode.",
+      "tags": ["Swift", "Xcode"]
+    },
+    {
+      "Title": "Backend Development",
+      "Description": "Server-side development with Java, Spring Boot, and MySQL.",
+      "tags": ["Java", "Spring Boot", "MySQL"]
+    },
+    {
+      "Title": "Frontend Development",
+      "Description": "Client-side development with HTML, CSS, and JavaScript.",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    }
+  ]
+}

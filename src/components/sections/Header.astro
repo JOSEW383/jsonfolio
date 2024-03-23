@@ -1,0 +1,95 @@
+---
+import Contact from "src/components/icons/social/contact.astro";
+import Github from "src/components/icons/social/github.astro";
+import Linkedin from "src/components/icons/social/linkedin.astro";
+
+interface SocialMedia {
+  name: string;
+  logo: string;
+  url: string;
+}
+
+interface Props {
+  fullname: string;
+  title: string;
+  socialmedia: SocialMedia[];
+}
+
+const { fullname, title, socialmedia } = Astro.props;
+---
+
+<section
+  id="header"
+  class="items-center gap-10 mb-10 mt-1"
+  data-aos="fade-zoom-in"
+>
+  <h1
+    class="bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text inline-block"
+  >
+    {fullname}
+  </h1>
+  <div class="mb-3">
+    <astro-greet data-title={title}>
+      <span id="header_title" class="text-neutral-500 font-bold"></span>
+    </astro-greet>
+  </div>
+  <div class="flex">
+    {
+      socialmedia.map((social) => {
+        return (
+          <a
+            class="hvr-bounce-in flex items-center font-bold text-neutral-400 hover:text-blue-400 focus:text-blue-400 active:text-blue-400 mr-10 gap-2"
+            href={social.url}
+            target={social.url.startsWith("http") ? 'target="_blank"' : ""}
+          >
+            {social.logo === "contact" && <Contact />}
+            {social.logo === "github" && <Github />}
+            {social.logo === "linkedin" && <Linkedin />}
+
+            {social.name}
+          </a>
+        );
+      })
+    }
+  </div>
+</section>
+
+<script>
+  import Typed from 'typed.js';
+
+  class AstroGreet extends HTMLElement {
+    constructor() {
+      super();
+      const titles = this.dataset.title;
+
+      var header_title = new Typed("#header_title", {
+        strings: (titles ?? "").split(",").map((title) => title.trim()),
+        typeSpeed: 50,
+        backSpeed: 35,
+        backDelay: 3000,
+        loop: true,
+      });
+    }
+  }
+
+  customElements.define("astro-greet", AstroGreet);
+</script>
+
+<style>
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  h1 {
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+  }
+</style>
